@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+
+</head>
+<body>
+  <div class="wrapper"></div>
+  <header>
+</header>
+	<a href="{% url 'polls:index' %}?next={{ request.path }}">Polls</a>
+</body>
+</html>

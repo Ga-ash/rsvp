@@ -20,6 +20,10 @@ class Question(models.Model):
     was_published_recently.short_description = 'Published recently?'
 
 
+class UsedPassword(models.Model):
+    value = models.CharField(max_length=100)
+
+
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)

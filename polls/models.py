@@ -22,6 +22,7 @@ class Question(models.Model):
 
 class UsedPassword(models.Model):
     value = models.CharField(max_length=100)
+    ip_address = models.CharField(max_length=100)
 
 
 class Choice(models.Model):
